@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Search Student</h1>
+  <form action="" method="get">
+    {{ search.as_p }}
+    <input type="submit" value="submit">
+    <br>
+    <br>
+    {% if dict %}
+      <table>
+        {% for key,value in dict.items %}
+          <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+          </tr>    
+        {% endfor %}
+      </table>
+      {% else %}
+      <p>No User available</p>
+    {% endif %}
+  </form>
+</body>
+</html>

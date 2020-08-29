@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+form {
+  display: inline-block;
+}
+table tbody tr td ul{
+  list-style-type: none;
+}
+table tbody tr td ul li{
+  text-align: left;
+}
+button{
+  padding: 40px;
+}
